@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-      <link rel="stylesheet" href="css/modern-normalize.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/modern-normalize.css" />
     <link rel="stylesheet" href="css/main.min.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | NFT preview card component</title>
 
-  Equilibrium #3429
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="bg-700">
+    <main>
+      <section class="nft bg-500">
+        <figure>
+          <div class="nft__picture">
+            <img src="./images/image-equilibrium.jpg" alt="image of virtual NFT token" />
+            <div class="nft__overlay">
+              <svg class="icon icon--view" width="48" height="48">
+                <use href="./images/icons.svg#view"></use>
+              </svg>
+            </div>
+          </div>
+          <figcaption class="nft__figcaption">
+            <h1 class="nft__header text-700 text-700--link">Equilibrium #3429</h1>
+            <p class="nft__text text-500">Our Equilibrium collection promotes balance and calm.</p>
+            <div class="nft__price-box">
+              <p class="nft__price text-400 text-400--light">
+                <svg width="11" height="18" class="icon icon--fig icon--price">
+                  <use href="./images/icons.svg#ethereum"></use>
+                </svg>
+                0.041 ETH
+              </p>
+              <p class="nft__time text-400">
+                <svg width="16" height="16" class="icon icon--fig">
+                  <use href="./images/icons.svg#clock"></use>
+                </svg>
+                3 days left
+              </p>
+            </div>
+          </figcaption>
+        </figure>
 
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <img
+          class="nft__creator-photo"
+          width="33px"
+          height="33px"
+          src="./images/image-avatar.png"
+          alt="portrait of Jules Wyvern"
+        />
+        <p class="nft__creator text-400">
+          Creation of
+          <a class="text-400--link" href="#" target="_blank">Jules Wyvern </a>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+        Coded by <a href="https://pogbit.com/" target="_blank">@K. Rozbicki</a>
+      </div>
+    </footer>
+  </body>
 </html>
